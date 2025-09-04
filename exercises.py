@@ -4,35 +4,73 @@
 # Assign the second student’s name to a variable named first_student.
 # Assign the last student’s name to a variable named last_student.
 
-def manage_students():
-    # your code here
-    students = ['Heather', 'Zach', 'Tasha']
-    first_student = students[1]
-    last_student = students[-1]
+# def manage_students():
+#     # your code here
+#     students = ['Heather', 'Zach', 'Tasha']
+#     first_student = students[1]
+#     last_student = students[-1]
 
-# Call the function and print the result
-print('Exercise 1:', manage_students())
-# prints 'None' ????
+# # Call the function and print the result
+# print('Exercise 1:', manage_students())
+# # prints 'None' ????
 
 
-# Exercise 2: Loop and String Concatenation
+# # Exercise 2: Loop and String Concatenation
+# #
+# # Create a tuple named foods containing the same number of foods (strings) as there are names in the students list.
+# # Create a variable named meal and assign an empty string to it.
+# # Use a for loop to iterate over the strings in foods and append each string to meal.
+
+# def combine_foods():
+#     # your code here
+#     foods = ('pizza', 'cake', 'tacos')
+#     meal = ''
+#     for food in foods: 
+#         meal += food
+
+# # Call the function and print the result
+# print('Exercise 2:', combine_foods())
+# # prints 'None' ????
+
+
+# # Exercise 3: Slicing Tuples
+# #
+# # Using the slice operator, assign a new tuple containing only the last two food strings in the foods to a variable named last_two_foods.
+
+# def slice_foods():
+#     # your code here
+#     foods = ('pizza', 'cake', 'tacos')
+#     last_two_foods = slice(foods(-1,-2))
+
+# # Call the function and print the result
+# print('Exercise 3:', slice_foods())
+# # TypeError: 'tuple' object is not callable
+    
+
+# Exercise 4: Dictionaries and String Formatting
 #
-# Create a tuple named foods containing the same number of foods (strings) as there are names in the students list.
-# Create a variable named meal and assign an empty string to it.
-# Use a for loop to iterate over the strings in foods and append each string to meal.
+# Create a dictionary named home_town containing the keys of city, state, and population.
+# Using the home_town dictionary, assign to a variable named home_town_message a string with this format: “I was born in <city>, <state> - population of <population>”
 
-def combine_foods():
+def hometown_info():
     # your code here
-    foods = ('pizza', 'cake', 'tacos')
-    meal = ()
-    for food in foods: 
-        meal.extend(food)
+    home_town = {
+        'city': 'Wyoming',
+        'state': 'OH',
+        'population': '7000',
+        }
 
+    home_town_message = (f"I was born in {home_town['city']}, {home_town['state']} - population of {home_town['population']}.")
+
+    if 'city' in home_town:
+        return home_town_message
+    else:
+        return "Invalid input."
 # Call the function and print the result
-print('Exercise 2:', combine_foods())
+print('Exercise 4:', hometown_info())
 
 
 
 
- 
+
 # python3 exercises.py
